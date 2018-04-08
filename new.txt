@@ -1,1 +1,76 @@
-爱对方水电费所发生的范德萨大风刮过
+Chenjinrui2017
+
+
+http://localhost:8080/ZHTQ/PostRainfall
+
+3.2  //22-364.8-20 22-293-20 (63)
+
+{"lot":41.101,"lon":124.175}
+
+
+
+打开所有应用列表
+ adb shell am start -n  com.ysten.demo/.AllApp
+ adb shell am start -n  com.wh.camapp/com.wh.camapp.SettingActivity
+ adb shell am start -n  com.wh.camapp/com.wh.demo.DemoActivity
+	
+	 adb shell am start -n  com.ysten.demo/.AllApp
+ adb shell am start -n  com.wh.camapp/com.wh.camapp.SettingActivity
+ adb shell am start -n  com.wh.camapp/com.wh.demo.DemoActivity
+	
+	adb remount
+	
+	adb reboot
+	
+	
+
+指定目录文件推到特定目录
+
+adb push D:\download\mp3  /sdcard/mp3/
+
+adb查看MD5 MD5 * | file.name
+
+127|root@cheetah-hope-x3:/sdcard/ysten/facerec/data # md5 *
+
+ 
+
+#rm -r xxx //删除名字为xxx的文件夹及其里面的所有文件 
+
+#rm xxx //删除文件xxx 
+
+#rmdir xxx //删除xxx的文件夹
+
+win下获取MD5、sha1、sha256 
+
+certutil -hashfile D:\Work\apk\xxx MD5
+certutil -hashfile D:\1.exe SHA1
+certutil -hashfile D:\1.exe SHA256
+
+重启
+adb shell==> ps ==>kill -9 xx(system_server pid)
+
+输出日志到指定目录
+
+adb shell logcat > C:\Users\Soul\Desktop\log\LogTest.txt
+
+        
+adb install -r C:\Users\Soul\Desktop\MyLib\
+adb install -r D:\Work\apk\CamApp-release.apk
+
+adb push D:\Work\apk\CamApp-release.apk  /system/app/Ges
+adb push D:\Work\apk\so\libDNN.so /system/lib
+adb push D:\Work\apk\so\libNuiFace.so  /system/lib
+
+gradlew clean
+
+ getprop | grep ges
+getprop  persist.sys.yst.gesture 
+也可以手动写属性  setprop persist.sys.yst.gesture 0或1
+
+主：xiaoyi ysten123
+辅：xiaojia ysten123
+       dp dp123
+
+Git
+
+start D:\Git\Git\bin\sh.exe
